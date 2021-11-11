@@ -1,0 +1,51 @@
+<!--
+ * @Descripttion: 这是熊大写的
+ * @version: 1.0.0
+ * @Author: xt_xiong
+ * @Date: 2021-11-04 09:15:19
+ * @LastEditors: xt_xiong
+ * @LastEditTime: 2021-11-10 21:41:50
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var arr = ['a', 'b', 'c'];
+        // // 删除b元素  splice(从哪个位置开始删除, 删除几个元素)
+        // arr.splice(1, 1);
+        // console.log(arr);
+        // const str = "baba likely cute";
+        // const words = str.split("");
+        // console.log(words[3]);
+        function splitString(stringToSplit, separator) {
+            var arrayOfStrings = stringToSplit.split(separator);
+
+            console.log('The original string is: "' + stringToSplit +
+                '"'); //The original string is: "Oh brave new world that has such people in it."
+            console.log('The separator is: "' + separator + '"'); //The separator is: " "
+            console.log("The array has " + arrayOfStrings.length + " elements: "); //The array has 12 elements:
+
+            for (var i = 0; i < arrayOfStrings.length; i++)
+                console.log(arrayOfStrings[i] + " / "); //讲arrayOfStrings[i]+/ 作为分割符
+        }
+        var
+            tempestString = "Oh brave new world that has such people in it.";
+        var
+            monthString = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec";
+        var space = " ";
+        var comma = ",";
+        splitString(tempestString, space);
+        splitString(tempestString);
+        splitString(monthString, comma);
+    </script>
+</body>
+
+</html>
